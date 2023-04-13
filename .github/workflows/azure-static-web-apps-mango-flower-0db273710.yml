@@ -31,6 +31,10 @@ jobs:
           api_location: "" # Api source code path - optional
           output_location: "dist" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
+        env:
+          VUE_APP_OPENAI_ENDPOINT: ${{ secrets.VUE_APP_OPENAI_ENDPOINT }}
+          VUE_APP_OPENAI_MODEL_DEPLOYMENT_NAME: ${{ secrets.VUE_APP_OPENAI_MODEL_DEPLOYMENT_NAME }}
+          VUE_APP_OPENAI_KEY: ${{ secrets.VUE_APP_OPENAI_KEY }}
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'

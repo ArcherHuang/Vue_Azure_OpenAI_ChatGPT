@@ -1,1 +1,1 @@
-# Vue_Azure_OpenAI_ChatGPT
+# Vue Azure OpenAI ChatGPT

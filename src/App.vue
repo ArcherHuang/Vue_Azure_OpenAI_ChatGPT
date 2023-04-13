@@ -162,15 +162,9 @@ export default {
 }
 
 #chat-area {
-  /* overflow: scroll; */
   padding: 10px;
   list-style: none;
-  /* -ms-overflow-style: none;
-  scrollbar-width: none; */
 }
-/* ::-webkit-scrollbar{
-  display: none;
-} */
 
 .balloon {
   margin: 20px 0;

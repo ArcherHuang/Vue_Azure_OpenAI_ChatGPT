@@ -56,16 +56,11 @@ export default {
   watch: {
     chatMessages: {
       handler() {
-        console.log('handler');
-        // window.scrollTo({
-        //   left: 0,
-        //   top: document.documentElement.scrollHeight,
-        //   // top: document.body.scrollHeight,
-        //   behavior: 'smooth',
-        // });
-        // window.scrollBy(0, 99999);
-        const scrollingElement = (document.scrollingElement || document.body);
-        scrollingElement.scrollTop = scrollingElement.scrollHeight;
+        window.scrollTo({
+          left: 0,
+          top: document.body.scrollHeight,
+          behavior: 'smooth',
+        });
       },
       deep: true,
     },
